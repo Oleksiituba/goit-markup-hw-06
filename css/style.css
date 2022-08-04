@@ -131,16 +131,18 @@ display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
     display: flex;
-    align-items: center
+     align-items: center;
+        transition: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     
+      
 }
 
 .contacts-ikon{
 
     fill: currentColor;
-    margin-right: 10px;
-    
-
-    
+    margin-right: 10px; 
 
 }
 .header-link-contact:hover,
@@ -382,7 +384,11 @@ padding: 30px 32px;
     display: flex;
     align-items: center;
     justify-content: center;
-color: #AFB1B8;
+    color: #AFB1B8;
+    transition: background-color color ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .team_soc_icon{
     fill: currentColor;
@@ -423,6 +429,10 @@ display: flex;
     color: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    transition: background-color border  color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
 }
 
 .client_icon {
@@ -480,6 +490,9 @@ font-size: 14px;
    
     text-decoration: none;
     color:var(--second-title-color);
+    transition: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    
    
 }
@@ -493,6 +506,9 @@ font-size: 14px;
         text-decoration: none;
         color: rgba(255, 255, 255, 0.6);
         margin-top: 9px;
+        transition: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer_contacts_adress:hover,
 .footer_contacts_adress:focus {
@@ -536,6 +552,9 @@ font-size: 14px;
     color: var(--second-title-color);
 background-color: rgba(255, 255, 255,10%);
 margin-top:20px;
+transition: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -593,6 +612,10 @@ margin-top:20px;
         padding: 6px 22px;
         border: 0;
         cursor: pointer;
+
+        transition:background-color color border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
              
  }
 
