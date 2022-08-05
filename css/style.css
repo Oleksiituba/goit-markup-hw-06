@@ -116,6 +116,7 @@ display: flex;
     left: 0;
     bottom: 0;
     background-color: var(--btx-title--color);
+    
 }
 
     
@@ -578,6 +579,7 @@ transition: background-color;
 }
 
 
+
  /*------------PORTFOLIO-----------*/
 .header-list.header-link.current{
     color: var(--btx-title--color)
@@ -593,9 +595,9 @@ transition: background-color;
         list-style: none;
         display: flex;
         align-items: center;
-        
+        justify-content: center;
         margin-bottom: 50px;
-        justify-content: center
+        
     
 }
 
@@ -706,6 +708,51 @@ overflow: hidden;
     background: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
     transition: transform 250ms linear;
-   
+    overflow:auto;
+}
+  /*------------WINDOW-----------*/
+.backdrop {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.modal{
+    background-color: #ffffff;
+    width: 528px;
+    min-height: 581px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
+}
+
+.modal_close{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      background-color:transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000000;
+}
+.button_icon{
+    color: currentColor;
+    
+
+
+}
+
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
