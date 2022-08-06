@@ -95,6 +95,9 @@ display: flex;
         text-decoration: none;
         padding-top: 32px;
         padding-bottom: 32px;
+        transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -338,7 +341,6 @@ column-gap: 30px;
      right: 0;
      height: 70px;
      width: 100%;
-     padding: 27px;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -735,6 +737,11 @@ overflow: hidden;
     transform: translateY(100%);
     transition: transform 250ms linear;
     overflow:auto;
+}
+.port_top_text:hover,
+.port_top_text:focus{
+
+transform: translateY(0);
 }
   /*------------WINDOW-----------*/
 .backdrop {
