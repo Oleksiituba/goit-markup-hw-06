@@ -674,18 +674,20 @@ transition-property: background-color ;
 }
 .menu_project_list {
     /* outline: 1px solid tomato; */
-      max-width: 100%;
-      }
-      .menu_project_list:hover .port_top_text{
-        transform: translateY(0%);
-      }
-    .card_project{
-        display: block;
-        cursor: pointer;
-        transition-property: box-shadow;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    max-width: 100%;
+}
+
+.card_project:hover .port_top_text,
+.card_project:focus .port_top_text{
+    transform: translateY(0%);
+}
+.card_project{
+    display: block;
+    cursor: pointer;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .card_project:hover,
 .card_project:focus{
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
@@ -738,15 +740,10 @@ transition-property: background-color ;
     padding: 63px 24px ;
     background: rgba(33, 150, 243, 0.9);
     transform: translateY(101%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    opacity: 0;
+    transition: transform 250ms linear;
+    /* opacity: 0; */
 }
-.port_top_text:hover,
-.port_top_text:focus{
-    opacity: 1;
-    transform: translateY(0);
 
-}
   /*------------WINDOW-----------*/
 .backdrop {
     position: fixed;
@@ -754,6 +751,7 @@ transition-property: background-color ;
     height: 100vh;
     top: 0;
     background-color: rgba(0, 0, 0, 0.2);
+    
 }
 .modal{
     background-color: #ffffff;
@@ -764,6 +762,12 @@ transition-property: background-color ;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  
+        animation-duration: 3000ms;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+   
 
 }
 
