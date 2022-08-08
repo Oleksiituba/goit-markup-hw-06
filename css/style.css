@@ -9,6 +9,7 @@
   --team--section--color:#F5F4FA;
   --btx-color--bg:#188CE8;
   --bg--title-color:#E5E5E5;
+   
 }
 p,h1,h2,h3,h4
 {
@@ -763,10 +764,7 @@ transition-property: background-color ;
     left: 50%;
     transform: translate(-50%, -50%);
   
-        animation-duration: 3000ms;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
+     
    
 
 }
