@@ -10,7 +10,5 @@
 
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
-    refs.modal.classList.toggle("animate__animated");
-    refs.modal.classList.toggle("animate__backInDown");
   }
 })();
