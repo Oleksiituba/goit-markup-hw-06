@@ -602,9 +602,57 @@ transition-property: background-color ;
 .footer_soc_link:focus {
     background-color: var(--btx-title--color);
    
-
 }
 
+.container_mailing{
+    margin-left: 93px;
+}
+.mailing_info{
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  color: var(--second-title-color);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.mailing_input{
+    height: 50px;
+    width: 358px;
+    background-color: var(--bgrd--title--color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        padding: 15px;
+}
+.mailing_input::placeholder{
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+     
+}
+.malling_btn{
+display: inline-flex;
+align-items: center;
+justify-content: center;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        color: var(--second-title-color);
+        background-color: var(--btx-title--color);
+        border-radius: 4px;
+        border: 0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        padding: 10px 28px;
+        margin-left: 12px;
+}
+.malling_btn_icon{
+    fill: #ffffff;
+    margin-left: 10px;
+}
 
 
  /*------------PORTFOLIO-----------*/
@@ -806,7 +854,7 @@ transition-property: background-color ;
         line-height: 1.15;
         text-align: center;
         letter-spacing: 0.03em;
-        margin-bottom: 28 px;
+        margin-bottom: 30 px;
 
 }
 
@@ -815,18 +863,68 @@ transition-property: background-color ;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    margin-bottom: 28px;
     padding-left: 10px;
-    color: rgba(33, 33, 33, 0.2);
+    color: #212121;
     font-weight: 700;
+    font-size: 14px;
 }
-.modal_input::placeholder{
-    font-size: 12px;
-    font-weight: 400;
-    color: teal;
+.modal_input :valid {
+border: 1px solid var(--btx-title--color);
+color: blue;
 }
-.modal_label span{
+
+.modal_field {
+margin-bottom: 10px
+}
+.modal_field_coment{
+    margin-bottom: 20px;
+}
+
+.modal_label{
     margin-bottom: 5px;
-    font-size: 12px;
     display: block;
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+    color : var(--text-title--color); 
+    
 }
+.modal_text{
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    padding: 10px;
+
+}
+.modal_text::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox{
+    margin-bottom: 30px;
+}
+.checkbox_link{
+   text-decoration: underline;
+color:rgba(33, 150, 243, 1)
+}
+.modal_button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--second-title-color);
+    background-color: var(--btx-title--color);
+    border-radius: 4px;
+    border: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 10px 52px;
+display: inline-block;
+ }

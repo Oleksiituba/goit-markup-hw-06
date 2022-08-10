@@ -393,6 +393,24 @@
                 </li>
             </ul>
         </div>
+     <div class="container_mailing">
+        <p class="mailing_info">Підпишіться на розсилку</p>
+        <input
+         type="email" 
+         class="mailing_input"
+          name="user-E-mail" 
+          placeholder="E-mail"
+           required 
+           id="user-email" />
+           <button class="malling_btn">Підписатися
+            <svg class="malling_btn_icon" width="24" height="24">
+                <use href="./img/symbol.svg#icon-icon-send"></use>
+            </svg>
+           </button>
+         
+
+
+     </div>
 
     </div>
 </footer>
@@ -405,37 +423,68 @@
         </button>
         <p class="modal_title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal_form">
-            <label class="odal_label">
-<span>Введіть імя</span>
+          <div class="modal_field">
+            <label class="modal_label" for="user-name">Ім'я
             <input 
                type="text" 
                class="modal_input"
                name="user-name"
-               placeholder="ім'я"
+               placeholder=""
                required
+               id="user-name"
                />
+            <svg class="modal_icon" width="18" height="18">
+                <use href="./img/symbol.svg#icon-person-black"></use>
+            </svg>
             </label>
-               <label for="user-email"></label>
-
+            </div>
+         <div class="modal_field">
+          <label class="modal_label" for="user-tel">Телефон</label>        
             <input
-                type="tel"
+               type="tel"
                class="modal_input"
                name="user-tel"
-               placeholder="телефон"/>
-
-            <input 
-              
+               placeholder=""
+               required 
+               id="user-tel"
+               value=""
+               title="+380 (96) 111-11-11"
+             />
+            </div>
+         <div class="modal_field">
+            <label class="modal_label" for="user-email">Пошта</label>
+             <input
                  type="email"
-               class="modal_input" 
-               name="user-email"
-               placeholder="пошта"/>
-               
-               value=""/>
+                 class="modal_input" 
+                 name="user-email"
+                 placeholder=""
+                 required
+                 id="user-email"
+                   />
+            </div>
+                <div class="modal_field_coment">
+                    <label class="modal_label" for="user-text">Коментар</label>
 
-               
-
-
-            <button type="submit">submit </button>
+                 <textarea 
+                 name="usr_text"
+                  id="user-tex"
+                  placeholder="Введіть текст"
+                  class="modal_text"
+                  ></textarea>
+                </div>
+                <div class="checkbox">
+                    <label class="modal_checkbox" for="checkbox"></label>
+                   <input
+                    type="checkbox"
+                     class="checkbox_input" 
+                     name="checkbox" 
+                       id="checkbox"
+                     />
+                    Погоджуюся з розсилкою та приймаю <a class="checkbox_link" href="">Умови договору</a> 
+                    </div>
+             
+            <button class="modal_button" type="submit">Відправити </button>
+       
         </form>
     </div>
 </div>
