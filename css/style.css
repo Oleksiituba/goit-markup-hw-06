@@ -868,7 +868,7 @@ justify-content: center;
     font-weight: 700;
     font-size: 14px;
     outline: transparent;
-    transition-property: border-color, ;
+    transition-property: border-color ;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -887,7 +887,7 @@ justify-content: center;
     top: 50%;
     transform: translateY(-50%);
     fill: var(--first-title-color);
-    transition-property: fill, ;
+    transition-property: fill ;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
@@ -915,10 +915,14 @@ margin-bottom: 10px
     border-radius: 4px;
     resize: none;
     padding: 10px;
+    box-sizing: border-box;
+    transition-property: border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.modal-text:focus {
-border: 1px solid var(--btx-title--color);
+.modal-text:focus{
+border: var(--btx-title--color);
 }
 
 .modal-text::placeholder {
@@ -929,7 +933,18 @@ border: 1px solid var(--btx-title--color);
 
     color: rgba(117, 117, 117, 0.5);
 }
-
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 .checkbox{
     margin-bottom: 30px;
 }
@@ -944,6 +959,39 @@ border: 1px solid var(--btx-title--color);
    text-decoration: underline;
 color:rgba(33, 150, 243, 1)
 }
+.check-text{
+    display: flex;
+        align-items: center;
+}
+.check-text span{
+   
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--first-title-color);
+    border-radius: 2px;
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+       
+}
+.check_icon{
+    /* fill: transparent; */
+    opacity: 0;
+}
+.checkbox_input:checked + .check-text span {
+    background-color: var(--btx-title--color);
+    border: none;
+}
+.checkbox_input:focus + .check-text span {
+    background-color: var(--btx-title--color);
+    border: none;
+}
+.checkbox_input:checked + .check-text .check_icon {
+   fill:#ffffff;
+   opacity: 1;
+}
+
 .modal_button{
     font-weight: 700;
     font-size: 16px;
@@ -955,5 +1003,8 @@ color:rgba(33, 150, 243, 1)
     border: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 10px 52px;
-display: inline-block;
+    
+    position: absolute;
+        left: 165px;
+       
  }
