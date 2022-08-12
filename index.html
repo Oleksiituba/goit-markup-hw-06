@@ -424,7 +424,8 @@
         <p class="modal_title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal_form">
           <div class="modal_field">
-            <label class="modal_label" for="user-name">Ім'я
+            <label class="modal_label" for="user-name">Ім'я</label>
+           <div class="input-wrap">
             <input 
                type="text" 
                class="modal_input"
@@ -433,13 +434,14 @@
                required
                id="user-name"
                />
-            <svg class="modal_icon" width="18" height="18">
+                <svg class="modal_icon" width="18" height="18">
                 <use href="./img/symbol.svg#icon-person-black"></use>
             </svg>
-            </label>
+            </div>
             </div>
          <div class="modal_field">
-          <label class="modal_label" for="user-tel">Телефон</label>        
+          <label class="modal_label" for="user-tel">Телефон</label>    
+        <div class="input-wrap">
             <input
                type="tel"
                class="modal_input"
@@ -449,11 +451,16 @@
                id="user-tel"
                value=""
                title="+380 (96) 111-11-11"
-             />
+                />
+                        <svg class="modal_icon" width="18" height="18">
+                        <use href="./img/symbol.svg#icon-phone-black"></use>
+                    </svg>
+                    </div>
             </div>
          <div class="modal_field">
             <label class="modal_label" for="user-email">Пошта</label>
-             <input
+            <div class="input-wrap">
+            <input
                  type="email"
                  class="modal_input" 
                  name="user-email"
@@ -461,6 +468,10 @@
                  required
                  id="user-email"
                    />
+                    <svg class="modal_icon" width="18" height="18">
+                    <use href="./img/symbol.svg#icon-email-black"></use>
+                </svg>
+                </div>
             </div>
                 <div class="modal_field_coment">
                     <label class="modal_label" for="user-text">Коментар</label>
@@ -469,7 +480,7 @@
                  name="usr_text"
                   id="user-tex"
                   placeholder="Введіть текст"
-                  class="modal_text"
+                  class="modal-text"
                   ></textarea>
                 </div>
                 <div class="checkbox">
@@ -477,8 +488,9 @@
                    <input
                     type="checkbox"
                      class="checkbox_input" 
-                     name="checkbox" 
+                     name="policy" 
                        id="checkbox"
+                       value="true"
                      />
                     Погоджуюся з розсилкою та приймаю <a class="checkbox_link" href="">Умови договору</a> 
                     </div>
