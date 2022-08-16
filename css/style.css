@@ -976,8 +976,8 @@ color:rgba(33, 150, 243, 1)
        
 }
 .check_icon{
-    /* fill: transparent; */
-    opacity: 0;
+    fill: transparent;
+
 }
 .checkbox_input:checked + .check-text span {
     background-color: var(--btx-title--color);
@@ -989,7 +989,7 @@ color:rgba(33, 150, 243, 1)
 }
 .checkbox_input:checked + .check-text .check_icon {
    fill:#ffffff;
-   opacity: 1;
+   
 }
 
 .modal_button{
