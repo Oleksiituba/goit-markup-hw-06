@@ -801,8 +801,8 @@ justify-content: center;
     height: 100vh;
     top: 0;
     background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity 300ms cubic-bezier(.57, .57, 1, .92), 
-    visibility 300ms cubic-bezier(.57, .57, 1, .92);    
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);    
 }
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0) rotate(360deg);
@@ -817,7 +817,7 @@ justify-content: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1) rotate(0);
-    transition: transform 300ms cubic-bezier(.57, .57, 1, .92);
+    transition: transform 250ms cubic-bezier(.57, .57, 1, .92);
     padding: 40px;
 }
 
@@ -949,20 +949,26 @@ outline: none;
 .checkbox{
     margin-bottom: 30px;
 }
-.checkbox_input{
-    font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: var(--text-title--color);
-}
+
 .checkbox_link{
-   text-decoration: underline;
-color:rgba(33, 150, 243, 1)
+   text-decoration: none;
+border-bottom: 1px solid var(--btx-title--color);
+color:var(--btx-title--color);
+margin-left: 6px;
+
 }
 .check-text{
-    display: flex;
+    font-weight: 400;
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 0.03em;
+        color: var(--text-title--color);
+        display: flex;
         align-items: center;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        
 }
 .check-text span{
    
@@ -974,22 +980,20 @@ color:rgba(33, 150, 243, 1)
     display: flex;
     align-items: center;
     justify-content: center;
+    
        
 }
 .check_icon{
-    fill: white;
+    fill: transparent;
 }
 .checkbox_input:checked + .check-text span {
     background-color: var(--btx-title--color);
     border: none;
 }
-.checkbox_input:focus + .check-text span {
-    background-color: var(--btx-title--color);
-    border: none;
+.checkbox_input:checked + .check-text .check_icon{
+  fill: var(--second-title-color);
 }
-.checkbox_input:checked .check_icon {
-   background-color:var(--btx-title--color);
-}
+
 
 .modal_button{
     font-weight: 700;
