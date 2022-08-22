@@ -863,7 +863,7 @@ justify-content: center;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    padding-left: 10px;
+    padding-left: 42px;
     color: #212121;
     font-weight: 700;
     font-size: 14px;
@@ -922,7 +922,8 @@ margin-bottom: 10px
 
 }
 .modal-text:focus{
-border: var(--btx-title--color);
+border-color: var(--btx-title--color);
+outline: none;
 }
 
 .modal-text::placeholder {
@@ -976,8 +977,7 @@ color:rgba(33, 150, 243, 1)
        
 }
 .check_icon{
-    fill: transparent;
-
+    fill: white;
 }
 .checkbox_input:checked + .check-text span {
     background-color: var(--btx-title--color);
@@ -987,9 +987,8 @@ color:rgba(33, 150, 243, 1)
     background-color: var(--btx-title--color);
     border: none;
 }
-.checkbox_input:checked + .check-text .check_icon {
-   fill:#ffffff;
-   
+.checkbox_input:checked .check_icon {
+   background-color:var(--btx-title--color);
 }
 
 .modal_button{
